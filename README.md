@@ -54,6 +54,6 @@ The contact page allows users to get in touch with the company. It includes cont
 
 ## Contact
 
-For any inquiries or support, please visit the contact page or reach out to us via email at contact@email.com or phone at +123 456 789.
+For any inquiries or support, please visit the contact page or reach out to us via email at udohknowledge5@email.com or phone at +234 7037541754 . We look forward to serving you!
 
 Thank you for choosing SHOPREPO for your online shopping needs!
