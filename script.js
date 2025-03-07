@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Get elements for navigation bar and cart icon
     const bar = document.getElementById('bar');
     const close = document.getElementById('close');
     const nav = document.getElementById('navbar');
@@ -7,19 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     cartCount.classList.add('cart-count');
     cartIcon.appendChild(cartCount);
 
+    // Add event listener to open navigation bar
     if (bar) {
         bar.addEventListener('click', () => {
             nav.classList.add('active');
         });
     }
 
+    // Add event listener to close navigation bar
     if (close) {
         close.addEventListener('click', () => {
             nav.classList.remove('active');
         });
     }
 
-    // Handle View Details button click
+    // Handle "View Details" button click
     const viewDetailsButtons = document.querySelectorAll('.view-details');
     viewDetailsButtons.forEach(button => {
         button.addEventListener('click', (event) => {
@@ -36,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Handle "Add to Cart" button click
     const addToCartButton = document.querySelector('.add-to-cart');
     if (addToCartButton) {
         addToCartButton.addEventListener('click', () => {
@@ -62,11 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Update cart count on page load
     updateCartCount();
+
+    // Load cart items if on cart page
     if (window.location.pathname.includes('cart.html')) {
         loadCartItems();
     }
 
+    // Load product details if on product page
     const product = JSON.parse(localStorage.getItem('product'));
     if (product) {
         document.getElementById('MainImg').src = product.img;
@@ -83,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Update cart count display
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCount = document.querySelector('.cart-count');
@@ -92,6 +101,7 @@ function updateCartCount() {
     }
 }
 
+// Load cart items and display them in the cart table
 function loadCartItems() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartTableBody = document.querySelector('#cart tbody');
@@ -121,14 +131,14 @@ function loadCartItems() {
         }
     }
 
-    // Handle remove item
+    // Handle remove item from cart
     document.querySelectorAll('.fa-circle-xmark').forEach(icon => {
         icon.addEventListener('click', () => {
             removeCartItem(icon.getAttribute('data-id'));
         });
     });
 
-    // Handle quantity change
+    // Handle quantity change in cart
     document.querySelectorAll('input[type="number"]').forEach(input => {
         input.addEventListener('change', () => {
             const quantity = parseInt(input.value);
@@ -141,6 +151,7 @@ function loadCartItems() {
     });
 }
 
+// Remove item from cart
 function removeCartItem(id) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart = cart.filter(item => item.id != id);
@@ -149,6 +160,7 @@ function removeCartItem(id) {
     updateCartCount();
 }
 
+// Update item quantity in cart
 function updateCartItemQuantity(id, quantity) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart = cart.map(item => {
@@ -170,7 +182,6 @@ document.querySelector('#coupon #apply-coupon')?.addEventListener('click', () =>
         discount = 0.1;
     } else if (couponCode === 'DISCOUNT20') {
         alert('20% Discount applied')
-
         discount = 0.2;
     } else {
         alert('Invalid coupon code');
