@@ -27,6 +27,15 @@ The about page provides information about the company, its mission, and values. 
 ### Contact Page (`contact.html`)
 The contact page allows users to get in touch with the company. It includes contact details such as address, email, phone number, and office hours. Users can also fill out a form to leave a message or inquire about specific products or services.
 
+### Signup Page (`Signup.html`)
+The signup page allows new users to create an account. It includes a form where users can enter their first name, email, password, and repeat password. The form is validated using JavaScript to ensure that all fields are filled out correctly and that the passwords match.
+
+### Login Page (`login.html`)
+The login page allows existing users to log into their accounts. It includes a form where users can enter their email and password. The form is validated using JavaScript to ensure that all fields are filled out correctly.
+
+### Profile Page (`profile.html`)
+The profile page displays the user's profile information. It includes sections for the user's personal details, order history, and account settings. The profile page is dynamically loaded using JavaScript.
+
 ## Features
 
 - **Responsive Design**: The site is designed to be responsive and accessible on various devices, including desktops, tablets, and mobile phones.
@@ -35,12 +44,14 @@ The contact page allows users to get in touch with the company. It includes cont
 - **Cart Management**: Users can add, update, and remove items from their cart. The cart page displays the subtotal and total costs, and users can apply discount coupons.
 - **Newsletter Signup**: Users can sign up for newsletters to receive updates about new products and special offers.
 - **Footer**: The footer includes contact information, links to important pages, and social media icons for following the company.
+- **User Authentication**: Users can create an account, log in, and view their profile information.
+- **Form Validation**: JavaScript is used to validate the signup and login forms to ensure that all fields are filled out correctly.
 
 ## Technologies Used
 
 - **HTML**: For structuring the content of the web pages.
 - **CSS**: For styling the web pages and ensuring a responsive design.
-- **JavaScript**: For adding interactivity, managing the cart, and handling user actions.
+- **JavaScript**: For adding interactivity, managing the cart, handling user actions, and validating forms.
 - **Font Awesome**: For using icons in the navigation bar, cart, and other sections of the site.
 
 ## How to Use
@@ -51,9 +62,12 @@ The contact page allows users to get in touch with the company. It includes cont
 4. **Manage Cart**: Go to the cart page to view and manage the items in your cart. Apply discount coupons if available.
 5. **Proceed to Checkout**: Click the "Proceed To Checkout" button to complete your purchase.
 6. **Stay Informed**: Visit the blog page to read articles and case studies about the products. Sign up for the newsletter to receive updates.
+7. **Create an Account**: Go to the signup page to create a new account.
+8. **Log In**: Go to the login page to log into your account.
+9. **View Profile**: After logging in, go to the profile page to view your personal details and order history.
 
 ## Contact
 
-For any inquiries or support, please visit the contact page or reach out to us via email at udohknowledge5@email.com or phone at +234 7037541754 . We look forward to serving you! 
+For any inquiries or support, please visit the contact page or reach out to us via email at udohknowledge5@email.com or phone at +234 7037541754. We look forward to serving you!
 
 Thank you for choosing SHOPREPO for your online shopping needs!
