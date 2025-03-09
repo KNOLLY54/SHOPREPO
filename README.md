@@ -71,3 +71,12 @@ The profile page displays the user's profile information. It includes sections f
 For any inquiries or support, please visit the contact page or reach out to us via email at udohknowledge5@email.com or phone at +234 7037541754. We look forward to serving you!
 
 Thank you for choosing SHOPREPO for your online shopping needs!
+
+
+
+
+
+ <div id="newsletter" class="profile-section">
+                <h2>Newsletter</h2>
+                <p>Display user's newsletter subscriptions here...</p>
+            </div>

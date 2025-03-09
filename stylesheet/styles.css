@@ -1060,6 +1060,55 @@ font-size: 14px;
     font-size: 13px;
 }
 
+/* Profile Page Styles */
+#profile {
+    display: flex;
+    padding: 10px;;
+}
+
+.profile-sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.profile-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-sidebar ul li a:hover,
+.profile-sidebar ul li a.active {
+    background-color: #ddd;
+}
+
+.profile-content {
+    width: 75%;
+    padding: 20px;
+}
+
+.profile-section {
+    display: none;
+}
+
+.profile-section.active {
+    display: block;
+}
+
 /* ==============================MEDIA QUERIES============================== */
 @media(max-width: 799px){
     .section-p1 {
