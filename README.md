@@ -80,3 +80,4 @@ Thank you for choosing SHOPREPO for your online shopping needs!
                 <h2>Newsletter</h2>
                 <p>Display user's newsletter subscriptions here...</p>
             </div>
+"# Wisdom-s-Portfolio" 
