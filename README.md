@@ -72,12 +72,3 @@ For any inquiries or support, please visit the contact page or reach out to us v
 
 Thank you for choosing SHOPREPO for your online shopping needs!
 
-
-
-
-
- <div id="newsletter" class="profile-section">
-                <h2>Newsletter</h2>
-                <p>Display user's newsletter subscriptions here...</p>
-            </div>
-"# Wisdom-s-Portfolio" 

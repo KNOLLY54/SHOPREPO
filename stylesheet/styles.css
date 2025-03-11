@@ -169,6 +169,20 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 box-shadow: 60px 20px 34px rgba(19, 17, 17, 0.20);
+animation: zoomIn 20s infinite;
+max-width: 100%; /* Ensure the image does not exceed the screen width */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #hero h4{
@@ -376,6 +390,8 @@ right: 10px;
     height: 40vh;
     background-size: cover;
     background-position: center;
+    animation: zoomIn 20s infinite;
+    max-width: 100%; /* Ensure the image does not exceed the screen width */
 }
 
 #banner h4{
