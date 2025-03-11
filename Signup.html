@@ -31,14 +31,22 @@
                 <label for="password-input">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v52q-18-6-37.5-9t-42.5-3q-116 0-198 82t-82 198q0 45 13 84t37 76H240Zm480 40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Zm360 400q25 0 42.5-17.5T780-300q0-25-17.5-42.5T720-360q-25 0-42.5 17.5T660-300q0 25 17.5 42.5T720-240Zm0 120q30 0 56-14t43-39q-23-14-48-20.5t-51-6.5q-26 0-51 6.5T621-173q17 25 43 39t56 14Z"/></svg>
                 </label>
-                <input  type="password" name="password" id="password-input" placeholder="Password">
+                <input type="password" name="password" id="password-input" placeholder="Password">
+                <button type="button" id="toggle-password" class="toggle-password">
+                    <svg id="show-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4.5C7.05 4.5 2.73 7.61 1 12c1.73 4.39 6.05 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6.05-7.5-11-7.5zm0 13c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"/></svg>
+                    <svg id="hide-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" style="display:none;"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 6c-3.31 0-6 2.69-6 6 0 1.1.3 2.13.83 3.02l-1.42 1.42C4.54 14.88 4 13.49 4 12c0-4.41 3.59-8 8-8 1.49 0 2.88.54 4.02 1.41l-1.42 1.42C14.13 6.3 13.1 6 12 6zm0 12c-1.49 0-2.88-.54-4.02-1.41l-1.42 1.42C9.12 19.46 10.51 20 12 20c4.41 0 8-3.59 8-8 0-1.49-.54-2.88-1.41-4.02l-1.42 1.42C17.7 13.87 18 14.9 18 16c0 3.31-2.69 6-6 6zm-6.19-1.19l1.42-1.42C7.87 15.7 8 14.9 8 14c0-3.31 2.69-6 6-6 1.1 0 2.13.3 3.02.83l1.42-1.42C17.88 6.54 16.49 6 15 6c-4.41 0-8 3.59-8 8 0 1.49.54 2.88 1.41 4.02z"/></svg>
+                </button>
             </div>
 
             <div>
                 <label for="repeat-password-input">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v52q-18-6-37.5-9t-42.5-3q-116 0-198 82t-82 198q0 45 13 84t37 76H240Zm480 40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Zm360 400q25 0 42.5-17.5T780-300q0-25-17.5-42.5T720-360q-25 0-42.5 17.5T660-300q0 25 17.5 42.5T720-240Zm0 120q30 0 56-14t43-39q-23-14-48-20.5t-51-6.5q-26 0-51 6.5T621-173q17 25 43 39t56 14Z"/></svg>
                 </label>
-                <input  type="password" name="repeat password" id="repeat-password-input" placeholder="Repeat Password">
+                <input type="password" name="repeat password" id="repeat-password-input" placeholder="Repeat Password">
+                <button type="button" id="toggle-repeat-password" class="toggle-password">
+                    <svg id="show-repeat-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4.5C7.05 4.5 2.73 7.61 1 12c1.73 4.39 6.05 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6.05-7.5-11-7.5zm0 13c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"/></svg>
+                    <svg id="hide-repeat-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" style="display:none;"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 6c-3.31 0-6 2.69-6 6 0 1.1.3 2.13.83 3.02l-1.42 1.42C4.54 14.88 4 13.49 4 12c0-4.41 3.59-8 8-8 1.49 0 2.88.54 4.02 1.41l-1.42 1.42C14.13 6.3 13.1 6 12 6zm0 12c-1.49 0-2.88-.54-4.02-1.41l-1.42 1.42C9.12 19.46 10.51 20 12 20c4.41 0 8-3.59 8-8 0-1.49-.54-2.88-1.41-4.02l-1.42 1.42C17.7 13.87 18 14.9 18 16c0 3.31-2.69 6-6 6zm-6.19-1.19l1.42-1.42C7.87 15.7 8 14.9 8 14c0-3.31 2.69-6 6-6 1.1 0 2.13.3 3.02.83l1.42-1.42C17.88 6.54 16.49 6 15 6c-4.41 0-8 3.59-8 8 0 1.49.54 2.88 1.41 4.02z"/></svg>
+                </button>
             </div>
 
             <button type="submit">Signup</button>

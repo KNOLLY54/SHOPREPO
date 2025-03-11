@@ -1,15 +1,40 @@
 const form = document.getElementById('form');
-const firstname_input = document.getElementById('firstname-input');
 const email_input = document.getElementById('email-input');
 const password_input = document.getElementById('password-input');
-const repeatpassword_input = document.getElementById('repeat-password-input');
 const error_message = document.getElementById('error-message');
+
+const togglePassword = document.getElementById('toggle-password');
+const showIcon = document.getElementById('show-icon');
+const hideIcon = document.getElementById('hide-icon');
+
+// Optional elements for signup form
+const firstname_input = document.getElementById('firstname-input');
+const repeatpassword_input = document.getElementById('repeat-password-input');
+const toggleRepeatPassword = document.getElementById('toggle-repeat-password');
+const showRepeatIcon = document.getElementById('show-repeat-icon');
+const hideRepeatIcon = document.getElementById('hide-repeat-icon');
+
+togglePassword.addEventListener('click', () => {
+    const type = password_input.getAttribute('type') === 'password' ? 'text' : 'password';
+    password_input.setAttribute('type', type);
+    showIcon.style.display = type === 'password' ? 'block' : 'none';
+    hideIcon.style.display = type === 'password' ? 'none' : 'block';
+});
+
+if (toggleRepeatPassword) {
+    toggleRepeatPassword.addEventListener('click', () => {
+        const type = repeatpassword_input.getAttribute('type') === 'password' ? 'text' : 'password';
+        repeatpassword_input.setAttribute('type', type);
+        showRepeatIcon.style.display = type === 'password' ? 'block' : 'none';
+        hideRepeatIcon.style.display = type === 'password' ? 'none' : 'block';
+    });
+}
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let errors = [];
-    if (firstname_input) {
+    if (firstname_input && repeatpassword_input) {
         errors = getSignupFormErrors(firstname_input.value, email_input.value, password_input.value, repeatpassword_input.value);
     } else {
         errors = getLoginFormErrors(email_input.value, password_input.value);
@@ -18,7 +43,7 @@ form.addEventListener('submit', (e) => {
     if (errors.length > 0) {
         error_message.innerText = errors.join('. ');
     } else {
-        // Redirect to profile.html after successful signup
+        // Redirect to profile.html after successful login/signup
         window.location.href = 'profile.html';
     }
 });
@@ -120,15 +145,13 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-const allInputs = [firstname_input, email_input, password_input, repeatpassword_input];
+const allInputs = [firstname_input, email_input, password_input, repeatpassword_input].filter(Boolean);
 allInputs.forEach(input => {
-    if (input) {
-        input.addEventListener('input', () => {
-            if (input.parentElement.classList.contains('incorrect')) {
-                input.parentElement.classList.remove('incorrect');
-                error_message.innerText = '';
-            }
-        });
-    }
+    input.addEventListener('input', () => {
+        if (input.parentElement.classList.contains('incorrect')) {
+            input.parentElement.classList.remove('incorrect');
+            error_message.innerText = '';
+        }
+    });
 });
 

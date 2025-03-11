@@ -60,6 +60,7 @@ form > div {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 form label {
@@ -156,4 +157,19 @@ a:hover{
     color: rgb(204, 0, 255);
     font-weight: 600;
     margin-top: 10px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
