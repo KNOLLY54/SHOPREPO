@@ -160,7 +160,7 @@ body{width: 100%;}
 
 /* ==========HOME PAGE========= */
 #hero{
-background-image: url(/Image/bk1.jpg);
+background-image: url(Image/bk1.jpg);
 background-repeat: no-repeat;
 height: 90vh;
 width: 100%;
